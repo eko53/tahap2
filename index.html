@@ -11,12 +11,12 @@
 </head>
 <body>
   <header>
-    <h1>VUE_EVENTS</h1>
+    <h1>r e A c t</h1>
   </header>
   <section id="events">
   
   
-    <h2>reactVue</h2>
+    <h3>Vue Event</h3>
 	
     <button v-on:click="add(10)">Tambah + 10</button>
 	<button v-on:click="reduce(10)">Kurang - 10</button>
@@ -27,10 +27,11 @@
 	
     <p>Result: {{ hitung }}</p>
 	
-    <input type="text" v-on:input="siapa($event, 'zulfikar')">
+    <input type="text" v-model="inputValue" v-on:input="siapa($event, 'zulfikar')">
+
 	
     <p>Your Name: {{ nama }}</p>
-	
+	<button v-on:click="clear">Clear</button> <!-- bersihkan semua field dan text -->
 	
   </section>
 </body>

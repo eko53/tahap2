@@ -9,7 +9,9 @@ const app = Vue.createApp
   
   methods: 
   {
-    siapa (event, lastName) { this.nama = event.target.value + ' ' + lastName; },
+    clear () { this.hitung = 0 , this.nama = '' , this.inputValue = '' ; },
+	
+	siapa (event, lastName) { this.nama = event.target.value + ' ' + lastName; },
     
 	devide (num) { this.hitung /= num; },
 	
@@ -24,3 +26,6 @@ const app = Vue.createApp
 });
 
 app.mount('#events');
+
+mrasyid
+diysarm
