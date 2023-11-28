@@ -11,27 +11,23 @@
 </head>
 <body>
   <header>
-    <h1>r e A c t</h1>
+    <h1>R E A C T I V E</h1>
   </header>
-  <section id="events">
-  
-  
+  <section id="eko">
+    
     <h3>Vue Event</h3>
 	
     <button v-on:click="add(10)">Tambah + 10</button>
-	<button v-on:click="reduce(10)">Kurang - 10</button>
-	<button v-on:click="multiply(10)">Kali x 10</button>
-	<button v-on:click="devide(10)">Bagi / 10</button>
-	
-
-	
+    <button v-on:click="reduce(10)">Kurang - 10</button>
+    <button v-on:click="multiply(10)">Kali x 10</button>
+    <button v-on:click="devide(10)">Bagi / 10</button>
+    
     <p>Result: {{ hitung }}</p>
 	
     <input type="text" v-model="inputValue" v-on:input="siapa($event, 'zulfikar')">
-
 	
     <p>Your Name: {{ nama }}</p>
-	<button v-on:click="clear">Clear</button> <!-- bersihkan semua field dan text -->
+    <button v-on:click="clear">Clear</button>
 	
   </section>
 </body>

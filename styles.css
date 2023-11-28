@@ -2,9 +2,23 @@
 
 html { font-family: 'Jost', sans-serif; }
 
-body { margin: 0; }
+body {
+  background-image: url('dinding.jpg');
+  animation: animateBackground 20s linear infinite;
+  margin: 0;
+}
 
-header, #events {
+@keyframes animateBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+
+header, #eko {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   margin: 3rem auto;
   border-radius: 10px;
@@ -18,17 +32,17 @@ header {
   background-color: #4fc08d;
   color: white; }
 
-#events {
+#eko {
   background-color: #ffffff;
   color: #333333; }
 
-#events h2 {
+#eko h2 {
   font-size: 2rem;
   border-bottom: 4px solid #ccc;
   color: #4fc08d;
   margin: 0 0 1rem 0; }
 
-#events p {
+#eko p {
   font-size: 1.25rem;
   font-weight: bold;
   border: 1px solid #4fc08d;
@@ -38,14 +52,14 @@ header {
   border-radius: 25px;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; }
 
-#events input {
+#eko input {
   font: inherit;
   text-align: center;
   border: 1px solid #ccc;
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-#events input:focus {
+#eko input:focus {
   outline: none;
   text-align: center;
   border-color: #1b995e;
@@ -53,7 +67,7 @@ header {
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.26);
 }
 
-#events button {
+#eko button {
   font: inherit;
   cursor: pointer;
   border: 1px solid #ff0077;
@@ -66,10 +80,11 @@ header {
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-#events button:hover,
-#events button:active {
+#eko button:hover,
+#eko button:active {
   background-color: #ec3169;
   border-color: #ec3169;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.26);
   transform: scale(1.05);
 }
+
